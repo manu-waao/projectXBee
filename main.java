@@ -54,6 +54,7 @@ public class Main {
     }
 }
 
+
 class ConfigLoader {
 
     public static Config loadConfig(String xmlFilePath) throws Exception {
@@ -101,16 +102,16 @@ class Config {
     public Config(String serialPort, int baudRate, boolean nodeDiscoveryEnabled, int discoveryTimeout, 
                   int pingRetries, int pingTimeout, boolean performanceMonitorEnabled, 
                   int rttThreshold, boolean enableLogging, String[] testNodes) {
-        this.serialPort = serialPort;
-        this.baudRate = baudRate;
-        this.nodeDiscoveryEnabled = nodeDiscoveryEnabled;
-        this.discoveryTimeout = discoveryTimeout;
-        this.pingRetries = pingRetries;
-        this.pingTimeout = pingTimeout;
-        this.performanceMonitorEnabled = performanceMonitorEnabled;
-        this.rttThreshold = rttThreshold;
-        this.enableLogging = enableLogging;
-        this.testNodes = testNodes;
+                        this.serialPort = serialPort;
+                        this.baudRate = baudRate;
+                        this.nodeDiscoveryEnabled = nodeDiscoveryEnabled;
+                        this.discoveryTimeout = discoveryTimeout;
+                        this.pingRetries = pingRetries;
+                        this.pingTimeout = pingTimeout;
+                        this.performanceMonitorEnabled = performanceMonitorEnabled;
+                        this.rttThreshold = rttThreshold;
+                        this.enableLogging = enableLogging;
+                        this.testNodes = testNodes;
     }
     public String getSerialPort() { return serialPort; }
     public int getBaudRate() { return baudRate; }
