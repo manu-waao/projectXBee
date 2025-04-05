@@ -27,11 +27,11 @@ public class NodeDiscoveryManager {
                 }
             }
         } catch (Exception e) {
-            println("Discovery failed: " + e);
+            println("Discovery fail ed: " + e);
         }
     }
 
-    public ArrayList<NodeDiscover> getNodes() {
+    public ArrayList<NodeDiscover -> getNodes() {
         return nodes;
     }
 }
